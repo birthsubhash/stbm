@@ -19,16 +19,43 @@ class User_c extends CI_Controller {
       case 'home':
       $this->load->view('user_view', $data);
       break;
+
+
       case 'applications':
       $this->load->view('application', $data);
       break;
+
+
+       case 'family':
+      $this->load->view('familyinfo', $data);
+      break;
+
+
+       case 'reference':
+       $this->load->view('academicreference', $data);
+      break;
+
+      case 'Preference':
+       $this->load->view('personalreference', $data);
+      break;
+
+       case 'asset':
+       $this->load->view('assets', $data);
+       break;
+
+case 'expense':
+      $this->load->view('expense', $data);
+      break;
+       
+
+      
       case 'pass':
       break;
       case 'person':
       $this->load->view('personform',$data);
       break;
       case 'academic':
-      $this->load->view('academicform',$data);
+      $this->load->view('academicinfo',$data);
       break;
       case 'register':
       $data['new'] = "Welcome to STB's Scholarship Portal!";
